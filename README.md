@@ -1,4 +1,4 @@
-# S. M. Samiul Islam — Personal Academic Website
+# S M Samiul Islam — Personal Academic Website
 
 Welcome to the open-source repository for my academic website.  
 This site highlights my research, publications, teaching, and service in **Civil & Environmental Engineering**, with a focus on **hydroinformatics, GIS/remote sensing, flood/drought risk, and climate resilience**.
