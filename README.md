@@ -1,39 +1,53 @@
+# S. M. Samiul Islam — Personal Academic Website
 
-# Personal Research Website
+Welcome to the open-source repository for my academic website.  
+This site highlights my research, publications, teaching, and service in **Civil & Environmental Engineering**, with a focus on **hydroinformatics, GIS/remote sensing, flood/drought risk, and climate resilience**.
 
-This is a **free**, no-purchase-needed personal website you can deploy on **GitHub Pages** or **Netlify**.
+📍 **Website:** [https://smsamiul.github.io]  
+📄 **CV:** Available under `assets/CV.pdf`  
+✉️ **Contact:** islamsamiul07@gmail.com
 
-## Quick Edit
-- Open `index.html` and replace **Your Name**, email, links, and section contents.
-- Put your actual `CV.pdf` into `assets/` and keep the link as `assets/CV.pdf`.
-- Update publications in the table under the “Publications” section.
+---
 
-## Deploy to GitHub Pages (100% free)
-1. Create a GitHub account (if you don’t have one).
-2. Create a new repository named `username.github.io` (replace `username` with your GitHub username).
-3. Upload all files in this folder to the repository (index.html, styles.css, script.js, assets/).
-4. Go to **Settings → Pages** and ensure the site is built from the `main` branch (root).
-5. Visit `https://username.github.io` — your site is live.
+## About This Site
 
-### Alternative: Repo not named username.github.io
-- Create any repo name, e.g., `personal-site`.
-- Go to **Settings → Pages**, set Source = `main` and Folder = `/root`.
-- Site will be at `https://username.github.io/personal-site/`.
+This is a minimal, fast-loading personal website built using only HTML, CSS, and a bit of JavaScript.  
+It is designed to be easily editable, mobile-friendly, and completely free to host using GitHub Pages.
 
-## Deploy to Netlify (free)
-1. Go to https://app.netlify.com and click **Add new site → Deploy manually**.
-2. Drag & drop this folder. Netlify gives you a live URL immediately.
-3. Click **Site settings → Domain management** to set a custom subdomain (still free).
+### Features
+- Clean, accessible design (no frameworks needed)
+- Sections for:
+  - Research Focus
+  - Teaching & Mentoring
+  - Publications (searchable)
+  - Contact
+  - CV download
+- Easy to update and deploy
 
-## Optional free extras
-- **Custom domain (optional cost)**: You can keep it 100% free without a domain by using the default GitHub/Netlify URL.
-- **Analytics**: Add Plausible/Matomo script for privacy-friendly stats (free tiers available).
-- **Form**: Use Formspree/Basin for a no-backend contact form.
+---
 
-## Editing Tips
-- Keep it simple and fast; it’s pure HTML/CSS with a small JS for publication search.
-- Replace placeholder text and badges with your research areas.
-- Add new sections as needed (e.g., “Grants”, “News”, “Students”).
+## How to Edit This Site
+
+All content is in `index.html` — just open it in any text editor and change:
+- Your name, email, and location
+- Bio and research focus
+- Publication list
+- Courses you teach
+- Contact section
+
+Your CV is stored in `assets/CV.pdf`. Replace that file with your real CV using the same filename.
+
+---
+
+## Hosting Instructions (GitHub Pages)
+
+1. Fork or clone this repository.
+2. Go to **Settings → Pages** and set Source = `main` branch, `/ (root)`.
+3. Visit `https://yourusername.github.io` to see your site live.
+4. Optional: customize your subdomain or add a custom domain.
+
+---
 
 ## License
-MIT — use and modify freely.
+
+This site is shared under the **MIT License** — free to reuse, modify, or adapt for academic or personal use. Attribution is appreciated but not required.
