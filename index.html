@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Site — Research & Teaching</title>
+  <meta name="description" content="Research, publications, and teaching portfolio.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">S M Samiul Islam</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <h1>Your Name</h1>
+      <p class="tagline">Ph.D. Candidate · Civil & Environmental Engineering — Hydroinformatics, GIS/RS, Climate & Community Resilience</p>
+      <p>Short bio (2–3 lines). Example: I build geospatial and machine-learning methods for flood/drought risk, water quality, and climate adaptation, translating science into community‑ready decision tools.</p>
+      <div class="badges">
+        <span class="badge">Hydroinformatics</span>
+        <span class="badge">Flood & Drought Risk</span>
+        <span class="badge">GIS / Remote Sensing</span>
+        <span class="badge">Coastal/Urban Resilience</span>
+      </div>
+      <div class="badges">
+        <a class="btn" href="#contact">smsamiul-islam@uiowa.edu</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Jxp1XJ8AAAAJ" target="_blank">Google Scholar</a>
+        <a class="btn" href="#cv">CV</a>
+        <a class="btn" href="https://www.linkedin.com/in/samiul-islam-a54216114/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <h2>Research Focus</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Urban & Coastal Climate Resilience</h3>
+          <p>Integrated geospatial–hydrologic modeling to assess extremes (flood, drought, sea‑level rise) on infrastructure and communities; equity‑aware indicators of exposure and adaptive capacity.</p>
+        </div>
+        <div class="card">
+          <h3>Hydroinformatics & Decision Support</h3>
+          <p>Open data + ML + remote sensing to deliver decision‑ready insights for policy, emergency managers, and the public.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <h2>Publications</h2>
+      <input type="search" id="pub-search" placeholder="Search title / year / outlet">
+      <div class="card" style="margin-top:12px">
+        <table class="table">
+          <thead><tr><th>Year</th><th>Title</th><th>Outlet</th><th>Link</th></tr></thead>
+          <tbody id="pub-rows">
+            <tr><td>2025</td><td>Comparative Analysis of Flood Risk Zoning...</td><td>EarthArXiv</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2024</td><td>State-level multidimensional agricultural drought susceptibility...</td><td>Int. J. River Basin Mgmt</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2021</td><td>Drought hot spot analysis using LISA...</td><td>Environmental Challenges</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2019</td><td>Coastal vulnerability analysis using fuzzy geospatial techniques</td><td>Ocean & Coastal Management</td><td><a href="#">DOI</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <h2>Teaching & Mentoring</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Courses I Can Teach</h3>
+          <ul>
+            <li>Hydrology & Hydraulics</li>
+            <li>Water/Wastewater & Water Quality</li>
+            <li>GIS/Remote Sensing for Engineers & Planners</li>
+            <li>Climate Risk & Resilience Analytics</li>
+            <li>Data‑Driven Environmental Modeling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul>
+            <li>IIHR seminar leader — interactive flood risk communication</li>
+            <li>TA for Informatics for Sustainable Systems</li>
+            <li>Mentored student projects on flood/drought mapping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="card">
+        <p>Place your CV PDF in this folder and link it here:</p>
+        <p><a class="btn" href="assets/CV.pdf" target="_blank">Download CV (PDF)</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> your.email@university.edu</p>
+        <p><strong>Location:</strong> City, State, USA</p>
+        <p>For a no‑backend contact form, use Formspree/Basin and replace this section with a simple &lt;form&gt; posting to their endpoint.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 Your Name. All rights reserved.</div>
+      <div>Built with plain HTML/CSS/JS. Free hosting via GitHub Pages or Netlify.</div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
