@@ -1,5 +1,5 @@
 
-# Personal Research Website (Free Hosting)
+# Personal Research Website
 
 This is a **free**, no-purchase-needed personal website you can deploy on **GitHub Pages** or **Netlify**.
 
