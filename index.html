@@ -9,65 +9,62 @@ export default function App() {
 
   const publications = [
     {
-      year: "2024",
-      title:
-        "A Novel Methodology for Enhancing Flood Risk Communication: The Nines of Safety",
-      outlet: "EarthArXiv",
+      year: "2025",
+      title: "Regional Variability of Drought-Crop Sensitivities Across Iowa Using Unsupervised Learning",
+      outlet: "Preprint (Under Review)",
+      link: "https://doi.org/10.31223/X5KF1J",
+    },
+    {
+      year: "2025",
+      title: "A Novel Methodology for Enhancing Flood Risk Communication: The Nines of Safety",
+      outlet: "Preprint (Under Review)",
       link: "https://doi.org/10.31223/X58H5Z",
     },
     {
+      year: "2025",
+      title: "Comparative Analysis of Flood Risk Zoning and Susceptibility Assessment for the Western Corn Belt Plains using Geospatial Techniques",
+      outlet: "EarthArXiv",
+      link: "https://doi.org/10.31223/X5072K",
+    },
+    {
       year: "2024",
-      title:
-        "State-level multidimensional agricultural drought susceptibility and risk assessment for agriculturally prominent areas",
+      title: "State-level multidimensional agricultural drought susceptibility and risk assessment for agriculturally prominent areas",
       outlet: "Int. J. River Basin Mgmt",
       link: "https://doi.org/10.1080/15715124.2024.2304546",
     },
     {
       year: "2021",
-      title:
-        "Drought hot spot analysis using local indicators of spatial autocorrelation: An experience from Bangladesh",
+      title: "Drought hot spot analysis using local indicators of spatial autocorrelation: An experience from Bangladesh",
       outlet: "Environmental Challenges",
       link: "https://doi.org/10.1016/j.envc.2021.100410",
     },
     {
       year: "2020",
-      title:
-        "Vulnerability Assessment of Bangladesh Coastline Using Gornitz Method",
+      title: "Vulnerability Assessment of Bangladesh Coastline Using Gornitz Method",
       outlet: "Springer Book Chapter",
       link: "https://doi.org/10.1007/978-3-030-47786-8_21",
     },
     {
       year: "2019",
-      title:
-        "Coastal vulnerability analysis of Bangladesh coast using fuzzy logic-based geospatial techniques",
+      title: "Coastal vulnerability analysis of Bangladesh coast using fuzzy logic-based geospatial techniques",
       outlet: "Ocean & Coastal Management",
       link: "https://doi.org/10.1016/j.ocecoaman.2019.03.010",
     },
     {
       year: "2018",
-      title:
-        "Land Use and Land Classification of Coastal Districts of Bangladesh using Sentinel-2 satellite imagery",
+      title: "Land Use and Land Classification of Coastal Districts of Bangladesh using Sentinel-2 satellite imagery",
       outlet: "Intl. Conf. on Advances in Civil Engineering",
       link: "#",
     },
     {
       year: "2017",
-      title:
-        "Analysis of Surge Heights in Respect of Historical Cyclone Events",
+      title: "Analysis of Surge Heights in Respect of Historical Cyclone Events",
       outlet: "Intl. Conf. on Planning, Architecture and Civil Engineering",
       link: "#",
     },
     {
       year: "2017",
-      title:
-        "Impact of Roadside Commercialization on Transportation Performance: A case study on Lalkhan Bazar to Customs road",
-      outlet: "Intl. Conf. on Planning, Architecture and Civil Engineering",
-      link: "#",
-    },
-    {
-      year: "2017",
-      title:
-        "Analysis of The Transformation of Water Body of Dhaka Metropolitan Area (DMA) Using Remote Sensing and GIS Techniques",
+      title: "Analysis of The Transformation of Water Body of Dhaka Metropolitan Area (DMA) Using Remote Sensing and GIS Techniques",
       outlet: "Intl. Conf. on Disaster Risk Mitigation",
       link: "#",
     },
@@ -122,7 +119,7 @@ export default function App() {
                     <td className="px-4 py-2 text-gray-900">{pub.title}</td>
                     <td className="px-4 py-2 text-gray-700">{pub.outlet}</td>
                     <td className="px-4 py-2">
-                      <a href={pub.link} className="text-sky-600 hover:underline">
+                      <a href={pub.link} className="text-sky-600 hover:underline" target="_blank" rel="noopener noreferrer">
                         DOI
                       </a>
                     </td>
@@ -142,3 +139,4 @@ export default function App() {
     </div>
   );
 }
+
