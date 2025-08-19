@@ -1,142 +1,122 @@
-import { useEffect, useState } from "react";
-
-export default function App() {
-  const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    document.title = "S M Samiul Islam — Research & Teaching";
-  }, []);
-
-  const publications = [
-    {
-      year: "2025",
-      title: "Regional Variability of Drought-Crop Sensitivities Across Iowa Using Unsupervised Learning",
-      outlet: "Preprint (Under Review)",
-      link: "https://doi.org/10.31223/X5KF1J",
-    },
-    {
-      year: "2025",
-      title: "A Novel Methodology for Enhancing Flood Risk Communication: The Nines of Safety",
-      outlet: "Preprint (Under Review)",
-      link: "https://doi.org/10.31223/X58H5Z",
-    },
-    {
-      year: "2025",
-      title: "Comparative Analysis of Flood Risk Zoning and Susceptibility Assessment for the Western Corn Belt Plains using Geospatial Techniques",
-      outlet: "EarthArXiv",
-      link: "https://doi.org/10.31223/X5072K",
-    },
-    {
-      year: "2024",
-      title: "State-level multidimensional agricultural drought susceptibility and risk assessment for agriculturally prominent areas",
-      outlet: "Int. J. River Basin Mgmt",
-      link: "https://doi.org/10.1080/15715124.2024.2304546",
-    },
-    {
-      year: "2021",
-      title: "Drought hot spot analysis using local indicators of spatial autocorrelation: An experience from Bangladesh",
-      outlet: "Environmental Challenges",
-      link: "https://doi.org/10.1016/j.envc.2021.100410",
-    },
-    {
-      year: "2020",
-      title: "Vulnerability Assessment of Bangladesh Coastline Using Gornitz Method",
-      outlet: "Springer Book Chapter",
-      link: "https://doi.org/10.1007/978-3-030-47786-8_21",
-    },
-    {
-      year: "2019",
-      title: "Coastal vulnerability analysis of Bangladesh coast using fuzzy logic-based geospatial techniques",
-      outlet: "Ocean & Coastal Management",
-      link: "https://doi.org/10.1016/j.ocecoaman.2019.03.010",
-    },
-    {
-      year: "2018",
-      title: "Land Use and Land Classification of Coastal Districts of Bangladesh using Sentinel-2 satellite imagery",
-      outlet: "Intl. Conf. on Advances in Civil Engineering",
-      link: "#",
-    },
-    {
-      year: "2017",
-      title: "Analysis of Surge Heights in Respect of Historical Cyclone Events",
-      outlet: "Intl. Conf. on Planning, Architecture and Civil Engineering",
-      link: "#",
-    },
-    {
-      year: "2017",
-      title: "Analysis of The Transformation of Water Body of Dhaka Metropolitan Area (DMA) Using Remote Sensing and GIS Techniques",
-      outlet: "Intl. Conf. on Disaster Risk Mitigation",
-      link: "#",
-    },
-  ];
-
-  const filtered = publications.filter((p) =>
-    `${p.year} ${p.title} ${p.outlet}`.toLowerCase().includes(search.toLowerCase())
-  );
-
-  return (
-    <div className="bg-gradient-to-br from-blue-50 to-sky-100 min-h-screen text-gray-800">
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur shadow-sm">
-        <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <h1 className="text-xl font-extrabold text-blue-900">S M Samiul Islam</h1>
-          <nav className="flex gap-6 text-sm font-semibold text-gray-700">
-            <a href="#about" className="hover:text-sky-700">About</a>
-            <a href="#research" className="hover:text-sky-700">Research</a>
-            <a href="#publications" className="hover:text-sky-700">Publications</a>
-            <a href="#teaching" className="hover:text-sky-700">Teaching</a>
-            <a href="#cv" className="hover:text-sky-700">CV</a>
-            <a href="#contact" className="hover:text-sky-700">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <main className="max-w-6xl mx-auto px-4 py-10">
-        {/* Other sections remain the same */}
-
-        <section id="publications" className="mb-20">
-          <h2 className="text-3xl font-bold text-blue-900 mb-6">Publications</h2>
-          <input
-            type="search"
-            placeholder="Search title / year / outlet"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full border border-blue-200 px-4 py-2 rounded-lg mb-4 shadow-sm"
-          />
-          <div className="overflow-auto bg-white shadow rounded-xl">
-            <table className="min-w-full text-sm">
-              <thead className="bg-blue-100 text-blue-900">
-                <tr>
-                  <th className="text-left px-4 py-2">Year</th>
-                  <th className="text-left px-4 py-2">Title</th>
-                  <th className="text-left px-4 py-2">Outlet</th>
-                  <th className="text-left px-4 py-2">Link</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filtered.map((pub, i) => (
-                  <tr key={i} className="border-t">
-                    <td className="px-4 py-2 text-gray-700">{pub.year}</td>
-                    <td className="px-4 py-2 text-gray-900">{pub.title}</td>
-                    <td className="px-4 py-2 text-gray-700">{pub.outlet}</td>
-                    <td className="px-4 py-2">
-                      <a href={pub.link} className="text-sky-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                        DOI
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        {/* Other sections continue... */}
-      </main>
-
-      <footer className="text-center text-sm text-gray-500 py-6 border-t">
-        © {new Date().getFullYear()} S M Samiul Islam — All rights reserved.
-      </footer>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Site — Research & Teaching</title>
+  <meta name="description" content="Research, publications, and teaching portfolio.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">S M Samiul Islam</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  );
-}
+  </header>
 
+  <main class="container">
+    <section class="hero" id="about">
+      <h1>Your Name</h1>
+      <p class="tagline">Ph.D. Candidate · Civil & Environmental Engineering — Hydroinformatics, GIS/RS, Climate & Community Resilience</p>
+      <p>Short bio (2–3 lines). Example: I build geospatial and machine-learning methods for flood/drought risk, water quality, and climate adaptation, translating science into community‑ready decision tools.</p>
+      <div class="badges">
+        <span class="badge">Hydroinformatics</span>
+        <span class="badge">Flood & Drought Risk</span>
+        <span class="badge">GIS / Remote Sensing</span>
+        <span class="badge">Coastal/Urban Resilience</span>
+      </div>
+      <div class="badges">
+        <a class="btn" href="#contact">smsamiul-islam@uiowa.edu</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&user=Jxp1XJ8AAAAJ" target="_blank">Google Scholar</a>
+        <a class="btn" href="#cv">CV</a>
+        <a class="btn" href="https://www.linkedin.com/in/samiul-islam-a54216114/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <h2>Research Focus</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Urban & Coastal Climate Resilience</h3>
+          <p>Integrated geospatial–hydrologic modeling to assess extremes (flood, drought, sea‑level rise) on infrastructure and communities; equity‑aware indicators of exposure and adaptive capacity.</p>
+        </div>
+        <div class="card">
+          <h3>Hydroinformatics & Decision Support</h3>
+          <p>Open data + ML + remote sensing to deliver decision‑ready insights for policy, emergency managers, and the public.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <h2>Publications</h2>
+      <input type="search" id="pub-search" placeholder="Search title / year / outlet">
+      <div class="card" style="margin-top:12px">
+        <table class="table">
+          <thead><tr><th>Year</th><th>Title</th><th>Outlet</th><th>Link</th></tr></thead>
+          <tbody id="pub-rows">
+            <tr><td>2025</td><td>Comparative Analysis of Flood Risk Zoning...</td><td>EarthArXiv</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2024</td><td>State-level multidimensional agricultural drought susceptibility...</td><td>Int. J. River Basin Mgmt</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2021</td><td>Drought hot spot analysis using LISA...</td><td>Environmental Challenges</td><td><a href="#">DOI</a></td></tr>
+            <tr><td>2019</td><td>Coastal vulnerability analysis using fuzzy geospatial techniques</td><td>Ocean & Coastal Management</td><td><a href="#">DOI</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="teaching">
+      <h2>Teaching & Mentoring</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Courses I Can Teach</h3>
+          <ul>
+            <li>Hydrology & Hydraulics</li>
+            <li>Water/Wastewater & Water Quality</li>
+            <li>GIS/Remote Sensing for Engineers & Planners</li>
+            <li>Climate Risk & Resilience Analytics</li>
+            <li>Data‑Driven Environmental Modeling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Highlights</h3>
+          <ul>
+            <li>IIHR seminar leader — interactive flood risk communication</li>
+            <li>TA for Informatics for Sustainable Systems</li>
+            <li>Mentored student projects on flood/drought mapping</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cv">
+      <h2>Curriculum Vitae</h2>
+      <div class="card">
+        <p>Place your CV PDF in this folder and link it here:</p>
+        <p><a class="btn" href="assets/CV.pdf" target="_blank">Download CV (PDF)</a></p>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> your.email@university.edu</p>
+        <p><strong>Location:</strong> City, State, USA</p>
+        <p>For a no‑backend contact form, use Formspree/Basin and replace this section with a simple &lt;form&gt; posting to their endpoint.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2025 Your Name. All rights reserved.</div>
+      <div>Built with plain HTML/CSS/JS. Free hosting via GitHub Pages or Netlify.</div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
